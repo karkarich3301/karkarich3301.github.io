@@ -1,0 +1,42 @@
+
+<html>
+<head>
+<link rel="stylesheet" href="style2.css">
+  <script>
+  
+  var checkbox = document.getElementById("chbx1");
+  
+  function foo(){
+   if(checkbox.checked=true){
+       func2();
+       checkbox.checked=false;
+         } }
+         
+ function func2() {
+     var S=0;
+      var c=0;
+var n
+do {
+        c++;
+  n= Number(prompt('Введите n', 69));
+    S=S+n;
+  
+  }
+while (n>=0)
+  document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML  +(S-n)/(c-1) + "<br>"; }
+</script>
+  </head>
+
+<body>
+
+ <h1>цикл</h1> 
+ 
+  <span class="toggle">
+       <input type="checkbox" id="chbx1" onchange="func2()">
+ <label data-off="лод" data-on="дол"></label></span>
+  <div id="otvet2"></div>
+<br>
+  <br>
+  
+  </body>
+</html>
